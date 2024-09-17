@@ -1,0 +1,123 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(232, 208, 255);
+}
+
+.containerbox {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginbox {
+    width: 30%;
+    border: 1px solid rgb(78, 76, 76);
+    background-color: rgb(234, 234, 253);
+    box-shadow: 10px 15px 20px rgb(146, 143, 143);
+      padding: 0 40px;
+}
+
+h1{
+    padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+input{
+    padding: 7px 5px;
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+
+     /* margin: 10px 30px; */
+    /* width: 80%; */
+    /* padding: 7px 5px;
+    margin:10px 25px;
+    border-radius: 10px;
+    display: block;
+    width: 100%; */
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1{
+    padding: 10px 12px;
+    margin: 10px 15px;
+    border-radius: 50%;
+    background-color:rgb(0, 0, 152);
+    color: white;
+    transition-property: all;
+    transition-duration: 1s;
+    border: none;
+
+}
+
+.btn2{
+    padding: 10px 12px;
+    margin: 10px 15px;
+    border-radius: 50%;
+    background-color:rgb(0, 0, 152);
+    color: white;
+      transition-property: all;
+    transition-duration: 1s;
+    border: none;
+
+}
+
+
+.btn1:hover {
+    background-color:black;
+    color: white;
+    transform: scale(1.2);
+}
+
+.btn2:hover {
+    background-color:black;
+    color:white;
+    transform: scale(1.2);
+}
+
+
+@media (max-width : 1024px) {
+    .loginbox {
+        width: 40%;
+    }
+}
+
+
+@media (max-width : 768px) {
+    .loginbox {
+        width: 50%;
+        padding: 20px;
+    }
+
+}
+
+
+@media (max-width : 640px) {
+    .loginbox {
+        width: 80%;
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+}
+
+@media (max-width : 440px) {
+    .loginbox {
+        width: 80%;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+
+<body>
+
+    <div class="containerbox">
+        <div class="loginbox">
+            <form>
+
+                <div>
+                    <h1 id="singnup">SignUp Here !</h1>
+                </div>
+
+                <div>
+                    <input type="text" placeholder="Enter Username">
+                </div>
+
+                <div>
+                    <input  id="entername" type="email" placeholder="Enter email">
+                </div>
+
+                <div>
+                    <input type="password" placeholder="Enter password">
+                </div>
+
+                <div class="button">
+                    <button id="signupbtn" class="btn1" type="button">SignUp</button>
+                     <button id="loginbtn" class="btn2" type="button">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+        document.getElementById("signupbtn").addEventListener("click", function () {
+            document.getElementById("entername").style.display = "block"
+            document.getElementById("singnup").innerText = "SignUp Here !"
+        })
+
+        document.getElementById("loginbtn").addEventListener("click", function () {
+            document.getElementById("entername").style.display = "none"
+            document.getElementById("singnup").innerText = "Login Here !"
+        })
+    </script>
+</body>
+
+</html>
